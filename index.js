@@ -36,6 +36,14 @@
 // a. If isStudent is true, display 'Welcome to Flatiron!'
 // b. If isStudent is false, display 'Welcome!'
 
+// Switch Statements
+
+// Use a switch statement to display different messages based on the value of 'score'.
+
+// Ternary Operator
+
+// Use a ternary operator to display different messages based on the value of 'score'.
+
 // Loops
 
 // 13. Use a 'for' loop to print numbers from 1 to 5.
@@ -45,47 +53,19 @@
 
 // 15. Declare an array 'colors' with a few color names.
 
-let colors = [
-  "red",
-  "blue",
-  "green",
-  "yellow",
-  "orange",
-  "purple",
-  "pink",
-  "black",
-  "white",
-  "brown",
-];
+// Loop through the 'colors' array and print each color to the console.
+// Loop through the 'colors' array and print the index of each color to the console.
+
+// ! difference between 'for', 'for...of', and 'for...in' loops
 
 // 16. Add a new color to the 'colors' array.
 
-colors.push("grey");
-
 // 17. Access the first and last color in the array.
-
-console.log(colors[0]);
 
 // access the color at a specific index.
 
 // find the index of a color.
 
-colors.indexOf("red");
-
 // check if a color exists in the 'colors' array.
 // remove the last color from the 'colors' array.
 // remove the first color from the 'colors' array.
-// remove a color from the 'colors' array at a specific index.
-
-// Objects
-
-// 18. Declare an object 'car' with properties 'make', 'model', and 'year'.
-// 19. Access and modify the 'year' property of the 'car' object.
-// 20. Iterate through the properties of the 'car' object.
-
-// Data Structures
-
-// 21. Use array methods to remove an element, add an element at the beginning, and find the index of an element.
-// 22. Create a set to store unique values.
-// 23. Create a map to store key-value pairs.
-// 24. Use the 'Set' and 'Map' data structures with some operations.
