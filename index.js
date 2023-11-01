@@ -5,6 +5,7 @@
 // * The DOM is used to connect webpages to scripts like JavaScript
 // * For each HTML element, there is an object in the DOM that we can access and interact with
 // * DOM is a tree of nodes/elements created by the browser. Each nodes is a child of another node and so on.
+// https://www.w3schools.com/js/pic_htmltree.gif
 
 // ! DOM Selectors
 // * Single element selectors: getElementById, querySelector
