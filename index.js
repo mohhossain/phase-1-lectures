@@ -37,3 +37,15 @@
 // * Create an array of color names
 // * Create an unordered list and add list items for each color in the array and append to the DOM (use foreach)
 // * The color of the text for each list item should be the color of the array item
+
+// ! Student excercise
+
+let user = {
+  name: "Sally",
+  age: 25,
+  email: "sally@aol.com",
+  favoriteFood: "pizza",
+};
+
+// * must be done in JavaScript:
+// * create a div with a class "user-card", create 'p' tags to display the user's name, age, email, and favoriteFood in the div.
