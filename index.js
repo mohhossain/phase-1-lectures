@@ -91,6 +91,8 @@ for (let key in user) {
   userDiv.append(p);
 }
 
+// or
+
 // let name = document.createElement("p");
 // name.textContent = user.name;
 
