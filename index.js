@@ -40,7 +40,55 @@ function renderPost(post) {
   let likeCount = document.createElement("p");
   likeCount.textContent = post.likes.count + " likes";
 
-  feed.append(img, p, button, likeCount);
+  let deleteButton = document.createElement("button");
+  deleteButton.textContent = "❌";
+
+  feed.append(img, p, button, likeCount, deleteButton);
+  // this is the counter variable
+  // * Deliverable 3: When a user clicks the like button, the button should update the number of likes on the page without having to refresh and should also update the number of likes in the backend
+  let countLikes = post.likes.count;
+
+  button.addEventListener("click", function () {
+    console.log(countLikes);
+    countLikes++;
+    console.log(countLikes);
+
+    console.log(post.id);
+    // PATCH
+    fetch("http://localhost:3000/posts/" + post.id, {
+      method: "PATCH",
+      headers: {
+        "content-type": "application/json",
+      },
+
+      body: JSON.stringify({
+        likes: {
+          count: countLikes,
+        },
+      }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        likeCount.textContent = data.likes.count + " likes";
+      });
+  });
+
+  deleteButton.addEventListener("click", function () {
+    console.log("Deleting!!");
+
+    fetch("http://localhost:3000/posts/" + post.id, {
+      method: "DELETE",
+    }).then((res) => {
+      if (res.status === 200) {
+        feed.removeChild(img);
+        feed.removeChild(p);
+        feed.removeChild(likeCount);
+        feed.removeChild(button);
+        feed.removeChild(deleteButton);
+      }
+    });
+  });
 }
 
 // * Deliverable 2: Using the form, create a new post making a post request and add it to the page without having to refresh
@@ -77,8 +125,6 @@ function handleSubmit(e) {
       renderPost(data);
     });
 }
-
-// * Deliverable 3: When a user clicks the like button, the button should update the number of likes on the page without having to refresh and should also update the number of likes in the backend
 
 // * Deliverable 4: Add a delete button to each post. When a user clicks the delete button, the post should be deleted from the page without having to refresh and should also be deleted from the backend
 
