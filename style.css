@@ -6,14 +6,51 @@ html{
     background-color: #fff;
 }
 
-body{
+.container{
+    width: 40%;
+    margin: 0 auto;
     text-align: center;
+    
 }
 
-#question{
-    font-weight: bold;
+.post-form-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
 }
 
-#answer{
-    font-style: italic;
+.post-form-div input{
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
 }
+
+.post-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.feed{
+    padding-top: 20px;
+    margin: 0 auto;
+    width: 70%;
+    text-align: left;
+}
+
+.feed img{
+    height: auto;
+    width: 500px;
+}
+
+.feed button{
+    border: none;
+    background-color: transparent;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+

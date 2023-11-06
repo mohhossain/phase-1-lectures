@@ -1,34 +1,23 @@
-<!-- FILEPATH: /Users/mohammadhossain/Desktop/phase-1-lectures/index.html -->
-
 <!DOCTYPE html>
 <html>
   <head>
-    <title>DOM Manipulation</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>// Flatiron Social</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
   </head>
-
-  <body>
-    <button id="toggle-mode">Dark/Light mode</button>
-
-    <div class="title-div">
-      <h1 class="title">// Flatiron School</h1>
-      <h1 class="title">Welcome to Communicating with server workshop</h1>
+  <body class="container">
+    <h1>// Flatiron Social</h1>
+    <div class="post-form-div">
+      <form class="post-form">
+        <input type="text" placeholder="What's on your mind?" />
+        <input type="text" placeholder="Image URL" />
+        <input type="submit" value="Post" />
+      </form>
     </div>
-<!-- this form takes user input for name and image -->
-    <form id="user-form">
-
-      <input type="text" name="name" placeholder="Please enter you name: " />
-
-      <input
-        type="text"
-        name="image"
-        placeholder="Please enter an url for image"
-      />
-
-      <input type="submit" />
-    </form>
-
-    <div class="user-cards"></div>
+    <div class="feed"></div>
 
     <script src="index.js"></script>
   </body>

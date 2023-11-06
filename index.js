@@ -1,64 +1,16 @@
-// let users = [];
-// use the fetch function to make request to the url
-fetch("https://large-sunset-yttrium.glitch.me/users/")
-  // get the response
-  .then((res) => res.json())
-  // decode the response and get the data from the response
-  .then((data) => {
-    console.log(data);
-    for (let user in data) {
-      renderUser(data[user]);
-    }
-  });
+// POST/PATCH/DELETE/GET
 
-// fetch("https://large-sunset-yttrium.glitch.me/users/16")
-//   // get the response
-//   .then((res) => res.json())
-//   // decode the response and get the data from the response
-//   .then((data) => {
-//     console.log(data);
-//     renderUser(data);
-//   });
+// ? review the objects in the db.json file and understand the structure of the data
 
-function renderUser(data) {
-  let userDiv = document.querySelector(".user-cards");
-  let name = document.createElement("p");
-  name.textContent = data.name;
+// * Deliverable 1: get all the posts from localhost:3000/posts and render them on the page, each post should have a <img/>, <p> for caption, a <button>❤️</button> for likes, and a <p> for likes count
 
-  let image = document.createElement("img");
-  image.src = data.image;
+// * Deliverable 2: Using the form, create a new post making a post request and add it to the page without having to refresh
 
-  userDiv.append(name, image);
-}
+// * Deliverable 3: When a user clicks the like button, the button should update the number of likes on the page without having to refresh and should also update the number of likes in the backend
 
-// let user1 = {
-//   name: "SOmeone",
-//   image: "kajdbfksjbksgnbarf",
-// };
+// * Deliverable 4: Add a delete button to each post. When a user clicks the delete button, the post should be deleted from the page without having to refresh and should also be deleted from the backend
 
-// let user2 = {
-//   name: "SOmeone else",
-//   image: "sjhdbfjhsabjhfgbsa",
-// };
-
-// renderUser(user1);
-// renderUser(user2);
-// let request = await fetch("https://large-sunset-yttrium.glitch.me/users/");
-
-// let response = await request.json()
-let userForm = document.querySelector("#user-form");
-userForm.addEventListener("submit", handleSubmit);
-
-function handleSubmit(e) {
-  e.preventDefault();
-
-  console.log(e);
-  let newUser = {
-    name: e.target.name.value,
-    image: e.target.image.value,
-  };
-
-  renderUser(newUser);
-
-  userForm.reset();
-}
+// ! student excercise
+// add a <button>🔁</button> to each post
+// display the number of shared of each post
+// when a user clicks the share button, the number of shares should increase by 1 and the backend should be updated

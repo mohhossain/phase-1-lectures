@@ -1,0 +1,30 @@
+{
+    "posts": [
+        {
+            "image" : "https://media.macphun.com/img/uploads/customer/how-to/608/15542038745ca344e267fb80.28757312.jpg?q=85&w=1340",
+            "caption": "Clicked this in the morning, what a beautiful day it was!",
+            "stats": {
+                "likes": 10,
+                "shared": 2
+            }
+        },
+
+        {
+            "image": "https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg",
+            "caption": "Sometimes you just need to sit back and enjoy the view",
+            "stats": {
+                "likes": 20,
+                "shared": 5
+            }
+        },
+
+        {
+            "image": "https://h5p.org/sites/default/files/h5p/content/1209180/images/file-6113d5f8845dc.jpeg",
+            "caption": "I love wildlives! #nature #wildlife #bengaltiger",
+            "stats": {
+                "likes": 30,
+                "shared": 10
+            }
+        }
+    ]
+}
