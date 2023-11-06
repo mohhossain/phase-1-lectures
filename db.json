@@ -1,30 +1,59 @@
 {
-    "posts": [
-        {
-            "image" : "https://media.macphun.com/img/uploads/customer/how-to/608/15542038745ca344e267fb80.28757312.jpg?q=85&w=1340",
-            "caption": "Clicked this in the morning, what a beautiful day it was!",
-            "stats": {
-                "likes": 10,
-                "shared": 2
-            }
-        },
-
-        {
-            "image": "https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg",
-            "caption": "Sometimes you just need to sit back and enjoy the view",
-            "stats": {
-                "likes": 20,
-                "shared": 5
-            }
-        },
-
-        {
-            "image": "https://h5p.org/sites/default/files/h5p/content/1209180/images/file-6113d5f8845dc.jpeg",
-            "caption": "I love wildlives! #nature #wildlife #bengaltiger",
-            "stats": {
-                "likes": 30,
-                "shared": 10
-            }
-        }
-    ]
+  "posts": [
+    {
+      "id": 1,
+      "image": "https://media.macphun.com/img/uploads/customer/how-to/608/15542038745ca344e267fb80.28757312.jpg?q=85&w=1340",
+      "caption": "Clicked this in the morning, what a beautiful day it was!",
+      "likes": {
+        "count": 11
+      },
+      "shared": {
+        "count": 2
+      }
+    },
+    {
+      "id": 2,
+      "image": "https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg",
+      "caption": "Sometimes you just need to sit back and enjoy the view",
+      "likes": {
+        "count": 20
+      },
+      "shared": {
+        "count": 5
+      }
+    },
+    {
+      "id": 3,
+      "image": "https://h5p.org/sites/default/files/h5p/content/1209180/images/file-6113d5f8845dc.jpeg",
+      "caption": "I love wildlives! #nature #wildlife #bengaltiger",
+      "likes": {
+        "count": 30
+      },
+      "shared": {
+        "count": 10
+      }
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1465488867967-ffb57e7f0a89?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG1vcm5pbmd8ZW58MHx8MHx8fDA%3D",
+      "caption": "Feeling wonderful!!",
+      "likes": {
+        "count": 0
+      },
+      "shares": {
+        "count": 0
+      },
+      "id": 4
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1465488867967-ffb57e7f0a89?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG1vcm5pbmd8ZW58MHx8MHx8fDA%3D",
+      "caption": "Something!",
+      "likes": {
+        "count": 0
+      },
+      "shares": {
+        "count": 0
+      },
+      "id": 5
+    }
+  ]
 }
